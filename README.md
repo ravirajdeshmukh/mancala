@@ -83,14 +83,14 @@ In the above representation, index 6 and 13 houses the stores for both the playe
 # What is the project structure?
 ```
 MANCALA/
-├── test_mancala.py             # Unit tests for Mancala game logic
-├── bot.py                      # (Optional) AI or bot-related functionality
-├── game_log.json               # Stores logs of past games for ML or debugging
-├── main.py                     # Entry point to run the game
-├── mancala.py                  # Core game logic (MancalaGame class, AI, rules)
-├── README.md                   # Project documentation
-├── TechAssignment_2023.pdf     # Original assignment/problem statement
-└── trial.py     
+├── src/
+│   ├── __init__.py
+│   ├── mancala.py         # MancalaGame and AIPlayer classes
+│   └── main.py            # Entry point
+├── test_mancala.py        # Unit tests
+├── Dockerfile
+├── requirements.txt
+└── README.md
 ```
 
 # Do I need to install any requirements for this?
