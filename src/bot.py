@@ -1,4 +1,4 @@
-from mancala import MancalaGame, PLAYER1_STORE
+from src.mancala import MancalaGame, PLAYER1_STORE
 import random
 
 class BotPlayer:

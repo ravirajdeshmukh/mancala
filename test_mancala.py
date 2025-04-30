@@ -1,5 +1,5 @@
 import unittest
-from mancala import (
+from src.mancala import (
     MancalaGame,
     PLAYER1_STORE)
 

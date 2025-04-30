@@ -3,13 +3,13 @@ import json
 import os
 from datetime import datetime as dt
 
-from mancala import (
+from src.mancala import (
     NUM_PITS_PER_PLAYER,
     PLAYER1_STORE,
     PLAYER2_STORE,
     MancalaGame
 )
-from bot import BotPlayer
+from src.bot import BotPlayer
 
 
 def print_board(board: List[int]) -> None:
