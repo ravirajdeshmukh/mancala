@@ -1,34 +1,34 @@
 # Introduction: 👋
-This is the repo that represents Mancala game (as a product). In this version of the game - it is made as a two player game. Something to note - the original requirement was to create this game using Java and develop a UI in the form of a web application but I am more comfortable writing code in Python although I can manage some java backend development. The UI of the game is a simple representation done in the terminal using numbers.
+This is the repo that represents Mancala game. In this version of the game - it is made as a two player game. Something to note - the original requirement was to create this game using Java and develop a UI in the form of a web application but I am more comfortable writing code in Python although I can manage some java backend development. The UI of the game is a simple representation done in the terminal using numbers.
 
 # What does the board look like? 🎲
 Since we could only manage a backend friendly UI - we have used the power of terminal to create a representation of the board. When executed the board looks like the following:
 
 ```text
-     Player1     
- 6  6  6  6  6  6
+         Player1     
+    6  6  6  6  6  6
   
- 0              0
+ 0                     0
   
- 6  6  6  6  6  6
-     Player2    
+    6  6  6  6  6  6
+         Player2    
 ```
 
 # How is this board handled on the backend?
 On the inside we are using a python array to mimic the board and also for managing the sequential movement of the stones. With their ability of accessing elements are specific indices - we are able to manage the skipping of opponents store while moving stones. The above board when represented in an array would look like the following:
 
 ```text
-Player 1 side
-╔════╦════╦════╦════╦════╦════╗
-║ 5  ║ 4  ║  3 ║  2 ║  1 ║  0 ║
-╚════╩════╩════╩════╩════╩════╝
+            Player 1 side
+    ╔════╦════╦════╦════╦════╦════╗
+    ║ 5  ║ 4  ║  3 ║  2 ║  1 ║  0 ║
+    ╚════╩════╩════╩════╩════╩════╝
 
-[6] ← P1 Store              [13] ← P2 Store
+[6] ← P1 Store                       [13] ← P2 Store
 
-╔════╦════╦════╦════╦════╦════╗
-║  7 ║  8 ║  9 ║ 10 ║ 11 ║ 12 ║
-╚════╩════╩════╩════╩════╩════╝
-Player 2 side
+    ╔════╦════╦════╦════╦════╦════╗
+    ║  7 ║  8 ║  9 ║ 10 ║ 11 ║ 12 ║
+    ╚════╩════╩════╩════╩════╩════╝
+            Player 2 side
 ```
 
 In the above representation, index 6 and 13 houses the stores for both the players 1 and 2 respectively.
@@ -95,7 +95,7 @@ MANCALA/
 
 # Do I need to install any requirements for this?
 No. The application has been dockerised. So all the requirements(tho nothing specific) are taken care of in the dockerfile.
-Since the original requirement was posted in Java and I have developed the solution in Python. Dockerising would ensure smooth and hastlefree experience.
+Since the original requirement was posted in Java and I have developed the solution in Python - dockerising would ensure smooth and hastlefree experience.
 
 # How do I play the game?
 There are 2 ways to play the game:
