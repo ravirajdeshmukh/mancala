@@ -101,7 +101,9 @@ Since the original requirement was posted in Java and I have developed the solut
 There are 2 ways to play the game:
 1. Building -> Running the docker container. To do this:
 ```
+docker build -t mancala-game .
 
+docker run -it mancala-game
 ```
 2. Running the code locally 
 ```
