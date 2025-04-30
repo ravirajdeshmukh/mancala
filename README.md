@@ -1,5 +1,5 @@
 # Introduction: 👋
-This is the repo that represents Mancala game. In this version of the game - it is made as a two player game. Something to note - the original requirement was to create this game using Java and develop a UI in the form of a web application but I am more comfortable writing code in Python although I can manage some java backend development. The UI of the game is a simple representation done in the terminal using numbers.
+This is a simple implementation of the Mancala game. In this version of the game - it is made as a two player game. Something to note - the original requirement was to create this game using Java and develop a UI in the form of a web application but I am more comfortable writing code in Python although I can manage some java backend development. The UI of the game is a simple representation done in the terminal using numbers.
 
 # What does the board look like? 🎲
 Since we could only manage a backend friendly UI - we have used the power of terminal to create a representation of the board. When executed the board looks like the following:
